@@ -1,0 +1,151 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	margin: 0;
+	overflow: hidden;
+}
+
+code {
+	font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+}
+
+.App {
+	cursor: url('../ton_symbol.svg'),auto;
+	text-align: center;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.App-header {
+	background-color: #282c34;
+}
+
+.App-body,.App-header {
+	align-items: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.App-body {
+/*	background-color: #87aff3;
+	position: relative;*/
+}
+
+.App-body:before {
+	background-color: #000;
+	opacity: .1;
+	z-index: 2;
+}
+
+.App-body:after,.App-body:before {
+	content: " ";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.App-body:after {
+	background-image: url(../images/shrimp.7f9d9eb39f183f8ea4b9.jpg);
+	background-size: cover;
+	background-position: center center;
+	opacity: 1;
+	z-index: 0;
+}
+
+.App-section {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 56px 0;
+	min-width: 360px;
+}
+
+.oishi {
+	font-size: 2rem;
+}
+
+.🦐 {
+	height: 32px;
+	position: absolute;
+	width: 32px;
+	z-index: 1;
+}
+
+@media (prefers-reduced-motion:no-preference) {
+	.🦐 {
+		animation: comeDown 1s ease;
+	}
+}
+
+.App-link-list {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 320px;
+	z-index: 10;
+}
+
+.App-img {
+	width: 100%;
+}
+
+.App-x {
+	width: 80%;
+}
+
+.App-link {
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	height: 56px;
+	justify-content: center;
+	width: 56px;
+	margin-bottom: 30px;
+}
+
+.kablammo-font {
+	font-family: Arial,system-ui;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "MORF" 0;
+	font-weight: bold;
+}
+
+.App-buy {
+	color: #000;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes comeDown {
+	0% {
+		transform: translateY(0);
+	}
+
+	15% {
+		transform: translateY(-10vh);
+	}
+
+	to {
+		transform: translateY(110vh);
+	}
+}
+/*# sourceMappingURL=main.a841550f.css.map*/
